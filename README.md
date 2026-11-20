@@ -2,39 +2,36 @@
 
 Website for The Babbling Gourmet, Chef Andi Marcus's private chef, farmhouse dining and event catering business in the Ottawa Valley.
 
-It's a plain HTML and CSS site, so there is nothing to install or build. Open `index.html` in a browser to see it, or upload the whole folder to any web host.
+It's a plain HTML and CSS site with no build step. Open `index.html` in a browser to see it. It's hosted on Netlify, which publishes the repo as it is.
 
 ## Pages
 
 | File | Page |
 | --- | --- |
 | `index.html` | Home |
-| `experiences.html` | Explore our experiences |
+| `experiences.html` | Experiences overview |
 | `private-chef.html` | Private chef experience |
 | `farmhouse-dining.html` | Farmhouse dining and celebrations |
 | `event-catering.html` | Event catering |
-| `our-food.html` | Our food (with sample menus) |
-| `about.html` | About Andi and The Babbling Gourmet |
-| `contact.html` | Contact us |
+| `our-food.html` | Our food, with sample menus |
+| `about.html` | About Andi |
+| `contact.html` | Contact and enquiry form |
+| `thank-you.html` | Shown after an enquiry is sent |
 
-Page text comes from the "Website copy" document. Styles live in `assets/css/style.css`, and the small amount of JavaScript (mobile menu, fade-ins, enquiry form) is in `assets/js/main.js`.
+Styles are in `assets/css/style.css`; the mobile menu, Experiences dropdown, fade-ins and form checks are in `assets/js/main.js`.
 
-## Adding photos
+## Photos
 
-Every photo spot is currently a warm-toned placeholder labelled "Photo to come". To use a real photo, replace the placeholder, for example:
-
-```html
-<div class="photo photo--kitchen photo--arch" role="img" aria-label="Photo to come: Chef Andi Marcus">…</div>
-```
-
-with
-
-```html
-<img class="photo photo--arch" src="assets/img/andi.jpg" alt="Chef Andi Marcus in the farmhouse kitchen" style="object-fit: cover">
-```
+All photos live in `assets/img/`. The current files are labelled placeholders. **See [IMAGES.md](IMAGES.md)** for the list of photos needed, which ones must be real, recommended sizes and crops, and Canva search ideas. To replace one, save the new photo as a JPG with exactly the same file name.
 
 ## Enquiry form
 
-Until a form service is connected, pressing **Send Your Enquiry** opens the visitor's email app with their answers already filled in, addressed to andi@thebabblinggourmet.com. To have enquiries sent straight to Andi's inbox instead, sign up for a form service such as Formspree and add its address to the form, e.g. `<form class="form enquiry" action="https://formspree.io/f/XXXX" method="POST">`. The JavaScript steps aside automatically when the form has an `action`.
+The form (on the Home and Contact pages) uses **Netlify Forms**, so enquiries are delivered without any extra service:
+
+1. In Netlify, go to **Project configuration → Forms** and turn on **form detection**, then redeploy.
+2. Under **Forms → Form notifications**, add an email notification to andi@thebabblinggourmet.com.
+3. Send a test enquiry from the live site and check it arrives before launch.
+
+Netlify's free plan includes 100 form submissions a month. Spam is filtered with a hidden "honeypot" field. Visitors who skip required fields (name, email, and "Tell us about your gathering") see a clear message next to each field.
 
 Enquire buttons on each experience page link to `contact.html?experience=private-chef`, `farmhouse` or `event-catering`, which pre-selects that experience in the form.

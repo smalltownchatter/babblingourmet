@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Event Catering in the Ottawa Valley | The Babbling Gourmet</title>
   <meta name="description" content="Custom catering by Chef Andi Marcus for intimate corporate events, seminars, team dinners, client gatherings and larger celebrations in the Ottawa Valley.">
+  <meta name="theme-color" content="#231b16">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 </head>
@@ -16,80 +17,78 @@
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html" aria-label="The Babbling Gourmet, home">
-        <span class="brand__name">The <em>Babbling</em> Gourmet</span>
-        <span class="brand__tag">Ottawa Valley &middot; Chef Andi Marcus</span>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span class="nav-toggle__bars"></span></button>
+      <a class="brand" href="index.html"><span class="brand__name">The <em>Babbling</em> Gourmet</span><span class="visually-hidden">, home</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars" aria-hidden="true"></span><span>Menu</span></button>
       <nav class="nav" id="site-nav" aria-label="Main">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="experiences.html">Experiences</a></li>
-          <li><a href="private-chef.html">Private Chef</a></li>
-          <li><a href="farmhouse-dining.html">Farmhouse Dining</a></li>
-          <li><a href="event-catering.html" aria-current="page">Event Catering</a></li>
-          <li><a href="our-food.html">Our Food</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="nav__cta" href="contact.html">Contact</a></li>
+        <ul class="nav__list">
+          <li class="has-sub">
+            <a class="nav__link" href="experiences.html">Experiences</a>
+            <button class="sub-toggle" aria-expanded="false" aria-controls="sub-experiences"><span class="visually-hidden">Show experiences</span><svg viewBox="0 0 12 12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l4 4 4-4"/></svg></button>
+            <ul class="subnav" id="sub-experiences">
+              <li><a href="private-chef.html">Private Chef</a></li>
+              <li><a href="farmhouse-dining.html">Farmhouse Dining</a></li>
+              <li><a href="event-catering.html" aria-current="page">Event Catering</a></li>
+            </ul>
+          </li>
+          <li><a class="nav__link" href="our-food.html">Our Food</a></li>
+          <li><a class="nav__link" href="about.html">About Andi</a></li>
+          <li><a class="nav__link nav__link--cta" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="page-hero dark">
       <div class="wrap">
         <div>
-          <p class="eyebrow">Event catering</p>
+          <span class="label">Event catering</span>
           <h1>Give your guests something to look forward to</h1>
           <p class="lead">A good meal can be a welcome pause in a busy day and a reason to keep the conversation going.</p>
-          <p>The Babbling Gourmet caters intimate corporate events, seminars, team dinners and client gatherings, with custom menus by Chef Andi Marcus. We’ll plan the food around your guests, venue and schedule so it fits comfortably into your event.</p>
-          <div class="btn-row"><a class="btn btn--light" href="contact.html?experience=event-catering">Discuss Your Event</a></div>
+          <p>The Babbling Gourmet caters intimate corporate events, seminars, team dinners and client gatherings, with custom menus by Chef Andi Marcus.</p>
+          <div class="actions"><a class="btn" href="contact.html?experience=event-catering#enquire">Discuss Your Event</a></div>
         </div>
-        <div class="photo photo--table photo--arch" role="img" aria-label="Photo to come: A catered team dinner"><span class="photo__label">Photo to come &middot; A catered team dinner</span></div>
+        <figure class="img img--4x3"><img src="assets/img/experience-event-catering.jpg" alt="A long table set for a team dinner" fetchpriority="high" decoding="async"></figure>
       </div>
     </section>
     <section class="section">
       <div class="wrap">
-        <div class="split reveal">
-          <div class="split__media"><div class="photo photo--night photo--arch" role="img" aria-label="Photo to come: Colleagues sharing a meal"><span class="photo__label">Photo to come &middot; Colleagues sharing a meal</span></div></div>
+        <div class="split reveal split--narrow-img">
+          <figure class="img img--4x5"><img src="assets/img/event-catering-lunch.jpg" alt="Shared dishes laid out for a group" loading="lazy" decoding="async"></figure>
           <div class="split__body">
-          <h2>Bring your team to the table</h2>
-          <p>Whether you’re thanking your team, welcoming clients or gathering colleagues away from the office, I’ll help you create a meal that suits the occasion.</p>
-          <p>We can discuss a seated dinner, a shared meal or a format that allows guests to eat and mingle. Each menu is developed with your group’s tastes and dietary requirements in mind.</p>
+            <h2>Bring your team to the table</h2>
+            <p>Whether you’re thanking your team, welcoming clients or gathering colleagues away from the office, I’ll help you create a meal that suits the occasion.</p>
+            <p>We can discuss a seated dinner, a shared meal or a format that allows guests to eat and mingle. Each menu is developed with your group’s tastes and dietary requirements in mind.</p>
+            
           </div>
         </div>
       </div>
     </section>
-    <section class="section section--linen">
+    <section class="section dark">
       <div class="wrap">
-        <div class="split split--reverse reveal">
-          <div class="split__media"><div class="photo photo--kitchen photo--arch" role="img" aria-label="Photo to come: Lunch between sessions"><span class="photo__label">Photo to come &middot; Lunch between sessions</span></div></div>
+        <div class="split reveal split--reverse">
+          <figure class="img img--4x3"><img src="assets/img/gallery-setting.jpg" alt="Linen, ceramics and candlelight on a wooden table" loading="lazy" decoding="async"></figure>
           <div class="split__body">
-          <h2>Keep the day moving with a well-planned meal</h2>
-          <p>For seminars and working events, timing matters as much as the menu. We’ll talk through your agenda and plan the food around it, whether you need lunch between sessions or dinner to bring the day to a close.</p>
-          <p>Share your venue details, guest count and schedule, and we’ll work through the arrangements together.</p>
+            <h2>Keep the day moving with a well-planned meal</h2>
+            <p>For seminars and working events, timing matters as much as the menu. We’ll talk through your agenda and plan the food around it, whether you need lunch between sessions or dinner to bring the day to a close.</p>
+            <p>Share your venue details, guest count and schedule, and we’ll work through the arrangements together.</p>
+            
           </div>
         </div>
       </div>
     </section>
     <section class="section">
-      <div class="wrap">
-        <div class="center reveal">
-        <svg class="ornament" viewBox="0 0 64 18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 9h22M42 9h22"/><path d="M32 2l7 7-7 7-7-7z"/><circle cx="32" cy="9" r="1.6" fill="currentColor"/></svg>
-        <h2>Catering for larger celebrations</h2>
-          <p>We also welcome enquiries for weddings and larger corporate events. Andi will discuss your plans with you and explore menu and service options suited to the size and setting of your event.</p>
-        </div>
+      <div class="wrap wrap--narrow reveal">
+        <span class="label">Catering for larger celebrations</span>
+        <p class="statement">We also welcome enquiries for weddings and larger corporate events.</p>
+        <p>Andi will discuss your plans with you and explore menu and service options suited to the size and setting of your event.</p>
       </div>
     </section>
-    <section class="section section--dark">
-      <div class="wrap">
-        <div class="center reveal">
-        <svg class="ornament" viewBox="0 0 64 18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 9h22M42 9h22"/><path d="M32 2l7 7-7 7-7-7z"/><circle cx="32" cy="9" r="1.6" fill="currentColor"/></svg>
+    <section class="section cta tint">
+      <div class="wrap reveal">
         <h2>Let’s start planning</h2>
-          <p>Tell us when and where you’re gathering, how many guests you expect and what you have in mind for the food.</p>
-        <div class="btn-row"><a class="btn btn--light" href="contact.html?experience=event-catering">Enquire About Event Catering</a></div>
-        </div>
+        <p>Tell us when and where you’re gathering, how many guests you expect and what you have in mind for the food.</p>
+        <div class="actions"><a class="btn" href="contact.html?experience=event-catering#enquire">Enquire About Event Catering</a></div>
       </div>
     </section>
 
@@ -99,14 +98,11 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <a class="brand" href="index.html">
-            <span class="brand__name">The <em>Babbling</em> Gourmet</span>
-            <span class="brand__tag">Ottawa Valley &middot; Chef Andi Marcus</span>
-          </a>
-          <p class="footer-intro">Private chef experiences, farmhouse dining and event catering in the Ottawa Valley.</p>
+          <a class="brand" href="index.html"><span class="brand__name">The <em>Babbling</em> Gourmet</span></a>
+          <p class="footer-intro">Private chef experiences, farmhouse dining and event catering with Chef Andi Marcus in the Ottawa Valley.</p>
         </div>
         <div>
-          <h4>Experiences</h4>
+          <h2>Experiences</h2>
           <ul>
             <li><a href="private-chef.html">Private chef experience</a></li>
             <li><a href="farmhouse-dining.html">Farmhouse dining and celebrations</a></li>
@@ -115,7 +111,7 @@
           </ul>
         </div>
         <div>
-          <h4>Get in touch</h4>
+          <h2>Get in touch</h2>
           <ul>
             <li><a href="mailto:andi@thebabblinggourmet.com">andi@thebabblinggourmet.com</a></li>
             <li><a href="tel:+16135615722">613-561-5722</a></li>
@@ -123,16 +119,14 @@
           </ul>
         </div>
         <div>
-          <h4>Follow along</h4>
+          <h2>Follow along</h2>
           <ul>
             <li><a href="https://www.instagram.com/thebabblinggourmet/" rel="noopener">Instagram</a></li>
             <li><a href="https://www.facebook.com/thebabblinggourmet/" rel="noopener">Facebook</a></li>
-            <li><a href="about.html">About Andi</a></li>
-            <li><a href="contact.html">Contact us</a></li>
           </ul>
         </div>
       </div>
-      <p class="footer-bottom">&copy; <span data-year>2026</span> The Babbling Gourmet. Serving Carp, Arnprior, Renfrew, Pembroke, Shawville, Barry’s Bay and beyond.</p>
+      <p class="footer-bottom">Serving Carp, Arnprior, Renfrew, Pembroke, Shawville, Barry’s Bay and beyond. &nbsp;&middot;&nbsp; &copy; <span data-year>2026</span> The Babbling Gourmet</p>
     </div>
   </footer>
 
