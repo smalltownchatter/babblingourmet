@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact The Babbling Gourmet | Plan Your Gathering</title>
+  <meta name="description" content="Get in touch with Chef Andi Marcus about a private chef experience, farmhouse dining or event catering in the Ottawa Valley.">
+  <meta name="theme-color" content="#231b16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img class="brand__logo" src="assets/img/logo.png" alt="The Babbling Gourmet, home" width="480" height="260"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars" aria-hidden="true"></span><span>Menu</span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li class="has-sub">
+            <a class="nav__link" href="experiences.html">Experiences</a>
+            <button class="sub-toggle" aria-expanded="false" aria-controls="sub-experiences"><span class="visually-hidden">Show experiences</span><svg viewBox="0 0 12 12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l4 4 4-4"/></svg></button>
+            <ul class="subnav" id="sub-experiences">
+              <li><a href="private-chef.html">Private Chef</a></li>
+              <li><a href="farmhouse-dining.html">Farmhouse Dining</a></li>
+              <li><a href="event-catering.html">Event Catering</a></li>
+            </ul>
+          </li>
+          <li><a class="nav__link" href="our-food.html">Our Food</a></li>
+          <li><a class="nav__link" href="about.html">About Andi</a></li>
+          <li><a class="nav__link nav__link--cta" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero dark page-hero--text">
+      <div class="wrap">
+        <div>
+          <span class="label">Contact us</span>
+          <h1>Let’s plan your next gathering</h1>
+          <p class="lead">Whether you have a whole evening in mind or you’re just beginning to make plans, I’d love to hear from you.</p>
+
+          
+        </div>
+      </div>
+    </section>
+    <section class="section " id="enquire">
+      <div class="wrap">
+        <div class="enquiry-grid">
+          <div class="reveal">
+            <span class="label">Enquiry form</span>
+            <h2>Tell us what you have in mind</h2>
+            <p>Tell me a little about the occasion, who’s joining you and what you’d love to eat. We’ll work through the details together.</p>
+            <form class="form enquiry" name="enquiry" method="POST" action="thank-you.html" data-netlify="true" netlify-honeypot="company" novalidate>
+              <input type="hidden" name="form-name" value="enquiry">
+              <p class="hp"><label>Leave this empty: <input name="company" tabindex="-1" autocomplete="off"></label></p>
+              <div class="field">
+                <label for="enquire-name">Your name <span class="req" aria-hidden="true">*</span></label>
+                <input id="enquire-name" name="name" type="text" aria-describedby="enquire-name-err" required autocomplete="name">
+                <p class="error" id="enquire-name-err"></p>
+              </div>
+              <div class="field">
+                <label for="enquire-email">Email address <span class="req" aria-hidden="true">*</span></label>
+                <input id="enquire-email" name="email" type="email" aria-describedby="enquire-email-err" required autocomplete="email">
+                <p class="error" id="enquire-email-err"></p>
+              </div>
+              <div class="field">
+                <label for="enquire-phone">Phone number</label>
+                <input id="enquire-phone" name="phone" type="tel" aria-describedby="enquire-phone-err" autocomplete="tel">
+                <p class="error" id="enquire-phone-err"></p>
+              </div>
+              <div class="field">
+                <label for="enquire-experience">Which experience are you interested in?</label>
+                <select id="enquire-experience" name="experience" aria-describedby="enquire-experience-err"><option value="">Choose one</option><option>Private Chef Experience</option><option>Farmhouse Dining and Celebrations</option><option>Event Catering</option></select>
+                <p class="error" id="enquire-experience-err"></p>
+              </div>
+              <div class="field">
+                <label for="enquire-dates">Preferred date or dates</label>
+                <input id="enquire-dates" name="dates" type="text" aria-describedby="enquire-dates-err">
+                <p class="error" id="enquire-dates-err"></p>
+              </div>
+              <div class="field">
+                <label for="enquire-guests">Approximate number of guests</label>
+                <input id="enquire-guests" name="guests" type="text" aria-describedby="enquire-guests-err" inputmode="numeric">
+                <p class="error" id="enquire-guests-err"></p>
+              </div>
+              <div class="field field--full">
+                <label for="enquire-location">Location or venue</label>
+                <input id="enquire-location" name="location" type="text" aria-describedby="enquire-location-err">
+                <p class="error" id="enquire-location-err"></p>
+              </div>
+              <div class="field field--full">
+                <label for="enquire-message">Tell us about your gathering <span class="req" aria-hidden="true">*</span></label>
+                <p class="hint" id="enquire-message-hint">Include any menu ideas, dietary requirements and an approximate budget if you have one in mind.</p>
+                <textarea id="enquire-message" name="message" aria-describedby="enquire-message-err enquire-message-hint" required></textarea>
+                <p class="error" id="enquire-message-err"></p>
+              </div>
+              <button class="btn" type="submit">Send Your Enquiry</button>
+              <p class="form__status" role="alert"></p>
+            </form>
+          </div>
+          <aside class="reveal" aria-label="Other ways to reach Andi">
+            <div class="aside-block">
+              <h3>Contact Andi directly</h3>
+              <p>Email <a href="mailto:andi@thebabblinggourmet.com">andi@thebabblinggourmet.com</a> or call <a href="tel:+16135615722">613-561-5722</a>.</p>
+            </div>
+            <div class="aside-block">
+              <h3>Find us at the farmhouse</h3>
+              <p>667 Northcote Rink Road<br>Renfrew, Ontario</p>
+            </div>
+            <div class="aside-block">
+              <h3>Where we cook</h3>
+              <p>Serving Carp, Arnprior, Renfrew, Pembroke, Shawville, Barry’s Bay and beyond.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><img class="brand__logo brand__logo--footer" src="assets/img/logo.png" alt="The Babbling Gourmet, home" width="480" height="260" loading="lazy"></a>
+          <p class="footer-intro">Private chef experiences, farmhouse dining and event catering with Chef Andi Marcus in the Ottawa Valley.</p>
+        </div>
+        <div>
+          <h2>Experiences</h2>
+          <ul>
+            <li><a href="private-chef.html">Private chef experience</a></li>
+            <li><a href="farmhouse-dining.html">Farmhouse dining and celebrations</a></li>
+            <li><a href="event-catering.html">Event catering</a></li>
+            <li><a href="our-food.html">Our food</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Get in touch</h2>
+          <ul>
+            <li><a href="mailto:andi@thebabblinggourmet.com">andi@thebabblinggourmet.com</a></li>
+            <li><a href="tel:+16135615722">613-561-5722</a></li>
+            <li>667 Northcote Rink Road<br>Renfrew, Ontario</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Follow along</h2>
+          <ul>
+            <li><a href="https://www.instagram.com/thebabblinggourmet/" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/thebabblinggourmet/" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">Serving Carp, Arnprior, Renfrew, Pembroke, Shawville, Barry’s Bay and beyond. &nbsp;&middot;&nbsp; &copy; <span data-year>2026</span> The Babbling Gourmet</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
