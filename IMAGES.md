@@ -19,13 +19,13 @@ Every photo on the site is a file in `assets/img/`. To swap in a real photo, sav
 | Needed | `gallery-dish.jpg` | One of Andi’s plated dishes, close up | Real photo needed | 1200 × 1500 px (4:5, portrait) | Our Food page | Becomes a tall tile on desktop; keep the dish in the centre. | — |
 | ✅ Added | `gallery-wine.jpg` | A Babbling Gourmet wine glass under string lights | Real photo needed | 1200 × 1500 px (4:5, portrait) | Home gallery (large tile) | Becomes a tall tile on desktop; keep the glass in the centre. | — |
 | Needed | `gallery-table.jpg` | Guests laughing around a candlelit table (faces soft or turned away is fine) | Atmosphere image OK (Canva) | 1600 × 1000 px (16:10) | Home gallery, Private Chef page | Wide crop; the top and bottom are trimmed. | “linen ceramic table setting” |
-| Needed | `gallery-family-style.jpg` | Family-style dishes on the table, hands reaching to share | Real photo needed | 1200 × 1200 px (1:1, square) | Home gallery, Farmhouse page | Square crop; keep the dishes centred. | — |
-| Needed | `gallery-hands.jpg` | Hands preparing food in warm light | Atmosphere image OK (Canva) | 1600 × 1200 px (4:3) | Home gallery, Our Food | Shown as a portrait tile on phones; keep the hands centred. | “hands preparing food warm light” |
+| ✅ Added | `gallery-family-style.jpg` | Family-style dishes on the table, hands reaching to share | Real photo needed | 1200 × 1200 px (1:1, square) | Home gallery, Farmhouse page | Square crop; keep the dishes centred. | — |
+| ✅ Added | `gallery-hands.jpg` | Hands preparing food in warm light | Atmosphere image OK (Canva) | 1600 × 1200 px (4:3) | Home gallery, Our Food | Shown as a portrait tile on phones; keep the hands centred. | “hands preparing food warm light” |
 | Needed | `gallery-setting.jpg` | Linen, ceramics and candles on warm wood, or a seasonal still life | Atmosphere image OK (Canva) | 2400 × 900 px (21:8, very wide banner) | Home gallery (bottom banner) | A thin banner on desktop, so choose a photo that still reads when cropped top and bottom. | “dark food photography seasonal” |
-| Needed | `farmhouse-sitting-room.jpg` | The farmhouse sitting room where guests gather before dinner | Real photo needed | 1600 × 1200 px (4:3) | Farmhouse page | — | — |
+| ✅ Added | `farmhouse-sitting-room.jpg` | The farmhouse sitting room where guests gather before dinner | Real photo needed | 1600 × 1200 px (4:3) | Farmhouse page | — | — |
 | Needed | `food-hero.jpg` | A generous spread of Andi’s food | Real photo needed | 1600 × 1200 px (4:3) | Our Food page, top | Shown as a 3:2 crop on phones. | — |
-| Needed | `about-farmhouse-winter.jpg` | The farmhouse in winter, or the snowmobile trail where the story began | Real photo needed | 1600 × 1200 px (4:3) | About page | — | — |
-| Needed | `about-community.jpg` | Drive-through dinner nights or community events (an older phone photo is fine) | Real photo needed | 1200 × 1500 px (4:5, portrait) | About page | — | — |
+| ✅ Added | `about-farmhouse-winter.jpg` | The farmhouse in winter, or the snowmobile trail where the story began | Real photo needed | 1600 × 1200 px (4:3) | About page | — | — |
+| ✅ Added | `about-community.jpg` | Drive-through dinner nights or community events (an older phone photo is fine) | Real photo needed | 1200 × 1500 px (4:5, portrait) | About page | — | — |
 | Needed | `event-catering-lunch.jpg` | A working lunch or shared dishes laid out for a group | Real photo needed | 1200 × 1500 px (4:5, portrait) | Event Catering page | — | — |
 
 The logo is `assets/img/logo.png`: a transparent background with a thin white edge, so it reads on the dark header.
